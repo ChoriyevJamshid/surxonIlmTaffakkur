@@ -31,7 +31,7 @@
                          alt="book">
                 </div>
 
-                <form id="language-form" action="{% url 'set_language' %}" method="post" class="borderim">
+                <form id="language-form" action="{% url 'set_language' %}" method="post" class="form-select">
                     {% csrf_token %}
                     <input name="next" type="hidden" value="{{ redirect_to }}">
                     <select id="language-select" name="language">
